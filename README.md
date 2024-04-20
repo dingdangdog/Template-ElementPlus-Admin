@@ -1,4 +1,4 @@
-![1713582561474](https://github.com/dingdangdog/Template-ElementPlus-Admin/assets/45959431/3ac1e36a-b5b0-4b24-8270-9043dd098da9)# Template-ElementPlus-Admin
+# Template-ElementPlus-Admin
 
 这是一个后台管理系统的前端模板项目，如需开发一个后台管理系统，可以取之即用。
 
