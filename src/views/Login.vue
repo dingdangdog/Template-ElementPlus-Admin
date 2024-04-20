@@ -69,7 +69,7 @@
     <!-- 表单确认按钮 -->
     <template #footer>
       <span class="dialog-footer">
-        <el-button type="primary" @click="register(registerFormRef)"> 确定 </el-button>
+        <!-- <el-button type="primary" @click="register(registerFormRef)"> 确定 </el-button> -->
         <el-button @click="cancel()"> 取消 </el-button>
       </span>
     </template>
@@ -181,35 +181,35 @@ const toRegister = () => {
   registerDialog.value.visable = true
 }
 
-const register = (form: FormInstance | undefined) => {
-  if (!form) return
-  form.validate((valid, data) => {
-    if (valid) {
-      //alert('submit!')
-      registerApi(registerUser.value).then((res) => {
-        if (res > 0) {
-          ElMessage({
-            type: 'success',
-            message: '注册成功，请登录!'
-          })
-          // 跳转到首页
-          // router.push({ path: '/' })
-          registerDialog.value.visable = false
-          formData.value.userName = registerUser.value.userName
-          formData.value.password = registerUser.value.password
-          form.resetFields()
-        } else {
-          ElMessage({
-            type: 'error',
-            message: '注册失败，请重试!'
-          })
-        }
-      })
-    } else {
-      console.log('error submit!!')
-    }
-  })
-}
+// const register = (form: FormInstance | undefined) => {
+//   if (!form) return
+//   form.validate((valid, data) => {
+//     if (valid) {
+//       //alert('submit!')
+//       registerApi(registerUser.value).then((res) => {
+//         if (res > 0) {
+//           ElMessage({
+//             type: 'success',
+//             message: '注册成功，请登录!'
+//           })
+//           // 跳转到首页
+//           // router.push({ path: '/' })
+//           registerDialog.value.visable = false
+//           formData.value.userName = registerUser.value.userName
+//           formData.value.password = registerUser.value.password
+//           form.resetFields()
+//         } else {
+//           ElMessage({
+//             type: 'error',
+//             message: '注册失败，请重试!'
+//           })
+//         }
+//       })
+//     } else {
+//       console.log('error submit!!')
+//     }
+//   })
+// }
 
 const cancel = () => {
   registerDialog.value.visable = false
