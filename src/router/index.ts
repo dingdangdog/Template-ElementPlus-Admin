@@ -29,7 +29,7 @@ const router = createRouter({
     {
       path: '/login',
       name: 'login',
-      hidden: true,
+      // hidden: true,
       meta: { public: true },
       component: LoginView
     }
