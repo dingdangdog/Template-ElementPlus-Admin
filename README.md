@@ -2,6 +2,8 @@
 
 这是一个后台管理系统的前端模板项目，如需开发一个后台管理系统，可以取之即用。
 
+Demo: https://admin.template.oldmoon.top
+
 ## 页面截图
 
 ![login](./images/login.jpg)
